@@ -7,7 +7,7 @@ A simple expense mamagement system using Python Flask.
 **POST /v1/expenses**a
 
 *Request body*
-
+```
 {
     "name" : "Foo Bar",
     "email" : "foo@bar.com",
@@ -17,6 +17,7 @@ A simple expense mamagement system using Python Flask.
     "estimated_costs" : "700",
     "submit_date" : "09-08-2016"
 }
+```
 
 *Response Header*
 
