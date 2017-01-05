@@ -1,0 +1,20 @@
+version: "2"
+services:
+  expensemanagement:
+      build: .
+      image: sjsu/011413402-assignment1
+      ports:
+        - 5000:5000
+      volumes:
+        - .:/code
+      restart: always
+      links:
+        - mysqlserver
+      hostname: myappserver
+  mysqlserver:
+      image: mysql
+      volumes:
+          - /var/lib/mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: newpassword
+        MYSQL_DATABASE: ExpenseManagement
