@@ -7,6 +7,7 @@ A simple expense mamagement system using Python Flask.
 **POST /v1/expenses**a
 
 *Request body*
+
 {
     "name" : "Foo Bar",
     "email" : "foo@bar.com",
@@ -18,15 +19,18 @@ A simple expense mamagement system using Python Flask.
 }
 
 *Response Header*
+
 201 Created
 
 **GET /v1/expenses/{expense_id}**
 
 *Response Header*
+
 200 OK
 
 
 *Response Body*
+
 {
     "id" : "123456",
     "name" : "Foo Bar",
@@ -43,16 +47,19 @@ A simple expense mamagement system using Python Flask.
 **PUT /v1/expenses/{expense_id}**
 
 *Request Body*
+
 {
     "estimated_costs" : "800"
 }
 
 *Response Header*
+
 202 Accepted
 
 **DELETE /v1/expenses/{expense_id}**
 
 *Response Header*
+
 204 No Content
 
 Shipped it in a Docker Container
